@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-def get_events(zipcode=60607):
+def get_events(zipcode):
     url = f'https://events.pokemon.com/en-us/events?near={zipcode}&filters=vg'
     # instance of Options class allows
     # us to configure Headless Chrome
